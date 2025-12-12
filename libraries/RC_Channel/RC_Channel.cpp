@@ -151,7 +151,7 @@ const AP_Param::GroupInfo RC_Channel::var_info[] = {
     // @Values{Copter, Plane}: 43:InvertedFlight Enable
     // @Values{Copter}: 44:Winch Enable, 45:Winch Control
     // @Values{Copter, Rover, Plane, Blimp}: 46:RC Override Enable
-    // @Values{Copter, Plane}: 47:User Function 1, 48:User Function 2, 49:User Function 3
+    // @Values{Copter}: 47:User Function 1, 48:User Function 2, 49:User Function 3
     // @Values{Rover}: 50:LearnCruise Speed
     // @Values{Rover, Plane}: 51:MANUAL Mode
     // @Values{Copter, Rover, Plane}: 52:ACRO Mode
