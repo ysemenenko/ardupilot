@@ -1770,8 +1770,6 @@ bool AP_Arming::mandatory_checks(bool report)
 //returns true if arming occurred successfully
 bool AP_Arming::arm(AP_Arming::Method method, const bool do_arming_checks)
 {
-    [[maybe_unused]] int i = 0;
-
     if (armed) { //already armed
         return false;
     }
