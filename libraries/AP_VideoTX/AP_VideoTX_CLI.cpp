@@ -19,7 +19,7 @@ const AP_Param::GroupInfo VTX_CLI_Command::var_info[] = {
     // @Param: BEGIN
     // @DisplayName: PWM Begin
     // @Description: Minimum PWM value to activate
-    // @Range: 800 2200
+    // @Range: 100 8000
     // @Units: PWM
     // @User: Standard
     AP_GROUPINFO("BEGIN", 2, VTX_CLI_Command, pwm_begin, 0),
@@ -27,7 +27,7 @@ const AP_Param::GroupInfo VTX_CLI_Command::var_info[] = {
     // @Param: END
     // @DisplayName: PWM End
     // @Description: Maximum PWM value to activate
-    // @Range: 800 2200
+    // @Range: 100 8000
     // @Units: PWM
     // @User: Standard
     AP_GROUPINFO("END", 3, VTX_CLI_Command, pwm_end, 0),
@@ -333,7 +333,7 @@ void AP_VideoTX_CLI::process_command(AP_HAL::UARTDriver* port, char* cmd)
         return;
     }
 
-    if (pwm_low < 800 || pwm_low > 2200 || pwm_high < 800 || pwm_high > 2200) {
+    if (pwm_low < 100 || pwm_low > 8000 || pwm_high < 100 || pwm_high > 8000) {
         port->printf("Error: pwm must be 800-2200\r\n");
         return;
     }
