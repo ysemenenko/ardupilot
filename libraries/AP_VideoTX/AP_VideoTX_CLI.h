@@ -68,6 +68,12 @@ public:
 
     VTX_CLI_Command commands[VTX_CLI_COMMANDS_MAX];
 
+    // CLI command handler
+    static void handle_cli_command(AP_HAL::UARTDriver* port, char* cmd);
+    void process_command(AP_HAL::UARTDriver* port, char* cmd);
+    void print_all(AP_HAL::UARTDriver* port);
+    void print_help(AP_HAL::UARTDriver* port);
+    
 private:
     static AP_VideoTX_CLI* _singleton;
 
