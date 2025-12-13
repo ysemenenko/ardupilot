@@ -122,6 +122,7 @@
 #endif
 #include "AP_Arming.h"
 #include "pullup.h"
+#include <AP_YCustom/AP_YCustom.h>
 
 /*
   main APM:Plane class
@@ -333,7 +334,12 @@ private:
 #if AP_QUICKTUNE_ENABLED
     AP_Quicktune quicktune;
 #endif
+
+
+    AP_YCustom ycustom;
+
     
+
     // This is the state of the flight control system
     // There are multiple states defined such as MANUAL, FBW-A, AUTO
     Mode *control_mode = &mode_initializing;
