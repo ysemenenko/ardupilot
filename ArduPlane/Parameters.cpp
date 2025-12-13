@@ -1035,6 +1035,10 @@ const AP_Param::Info Plane::var_info[] = {
     GOBJECT(quicktune, "QWIK_",  AP_Quicktune),
 #endif
     
+    // @Group: YCUSTOMS_
+    // @Path: ../libraries/AP_YCustom/AP_YCustom.cpp
+    GOBJECT(ycustom, "YC_", AP_YCustom),
+
     AP_VAREND
 };
 
