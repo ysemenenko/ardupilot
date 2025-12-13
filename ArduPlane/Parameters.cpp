@@ -1039,6 +1039,10 @@ const AP_Param::Info Plane::var_info[] = {
     // @Path: ../libraries/AP_YCustom/AP_YCustom.cpp
     GOBJECT(ycustom, "YC_", AP_YCustom),
 
+    // @Group: VTX_C
+    // @Path: ../libraries/AP_VideoTX/AP_VideoTX_CLI.cpp
+    GOBJECT(video_tx_cli, "VTXC_", AP_VideoTX_CLI),
+
     AP_VAREND
 };
 

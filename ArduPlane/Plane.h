@@ -123,7 +123,7 @@
 #include "AP_Arming.h"
 #include "pullup.h"
 #include <AP_YCustom/AP_YCustom.h>
-
+#include <AP_VideoTX/AP_VideoTX_CLI.h>
 /*
   main APM:Plane class
  */
@@ -338,7 +338,7 @@ private:
 
     AP_YCustom ycustom;
 
-    
+    AP_VideoTX_CLI video_tx_cli;
 
     // This is the state of the flight control system
     // There are multiple states defined such as MANUAL, FBW-A, AUTO
